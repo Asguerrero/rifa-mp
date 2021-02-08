@@ -25,7 +25,7 @@
 .boleta-grid{
 	display: grid;
 	grid-template-columns: 70% 30%;
-	border: 10px solid black;
+	border: 10px solid #02667A;
 
 }
 
@@ -45,7 +45,7 @@
     align-items: center;
 }
 .boleta-derecha{
-	border-left: solid 10px black;
+	border-left: solid 8px #02667A;
 	    display: flex;
     align-items: center;
     flex-direction: column;
@@ -53,17 +53,25 @@
 
 .olla-title{
 	text-align: center;
-    border-bottom: 10px solid;
+    border-bottom: 3px solid #02667A;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     margin: 0px;
+    background: #02667A;
+    color: white;
 }
 
 .cardWidthSet{
 
 
+}
+
+
+.informacion-boleta p{
+	text-align: center;
+	font-size: 130%;
 }
 
 .cardStyle{
@@ -79,10 +87,33 @@
 	margin-left: 1rem;
 }
 
+.boleta-grid  h3{
+	font-weight: 300;
+}
+
+.olla-type{
+	font-weight: 600 !important;
+}
 
 
 #main-div{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+  .boleta-grid{
+  	display: flex;
+  	flex-direction: column;}
+  	.boleta-derecha{
+	border-top: solid 3px #02667A;
+	    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+  
 }
