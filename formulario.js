@@ -50,7 +50,7 @@ let request = `boleta_pendiente/${name.value}/${string_one}/${string_two}/${phon
 
   fetch(proxyurl + host + request)
 
-  window.open(`file:///Users/valentinaguerrero/Desktop/PAU/boleta.html?${string_one}?${string_two}`);
+  window.open(`https://asguerrero.github.io/rifa-mp/boleta.html?${string_one}?${string_two}`);
   
 	
 
