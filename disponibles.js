@@ -27,7 +27,7 @@ function create_card(Numerouno, Numerodos, Nombre, Disponible, Telefono){
     let button = document.createElement('button');
     button.innerHTML = 'Comprar boleta';
 
-    button.href =`file:///Users/valentinaguerrero/Desktop/PAU/formulario.html?${Numerouno}?${Numerodos}`;
+    button.href =`https://asguerrero.github.io/rifa-mp/formulario.html?${Numerouno}?${Numerodos}`;
     console.log(button.href)
     
 	let setNumeroText = document.createTextNode(Numerouno + "-");
@@ -38,7 +38,7 @@ function create_card(Numerouno, Numerodos, Nombre, Disponible, Telefono){
 	numeros.appendChild(setNumerodosText); 
 	
 	button.onclick = function(){
-		location.href = `file:///Users/valentinaguerrero/Desktop/PAU/formulario.html?${Numerouno}?${Numerodos}`;
+		location.href = `https://asguerrero.github.io/rifa-mp/formulario.html?${Numerouno}?${Numerodos}`;
     
   };
 
