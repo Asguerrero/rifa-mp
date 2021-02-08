@@ -129,6 +129,12 @@
 	justify-content: center;
 }
 
+#main-div-d{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 
 @media only screen and (max-width: 900px) {
 
