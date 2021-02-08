@@ -20,7 +20,7 @@ fetch(proxyurl + host)
 
 
 function create_card(Numerouno, Numerodos, Nombre, Disponible, Telefono){
-	let main_div = document.getElementById('main-div');
+	let main_div = document.getElementById('main-div-d');
     let card = document.createElement("div");
     let numeros = document.createElement('p');
     card.classList.add('cardWidthSet', 'cardStyle')
