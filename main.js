@@ -1,6 +1,6 @@
 const host ='https://rifa-database-app.herokuapp.com/todas';
 
-const proxyurl = "https://cors-anywhere.herokuapp.com/";
+const proxyurl = "https://cors-valentina.herokuapp.com/";
 
 
 function displayImages(source){
@@ -30,6 +30,18 @@ function create_card(Numerouno, Numerodos, Nombre, Disponible, Telefono){
 	let setNombreText = document.createTextNode("Nombre:" + Nombre);
 	let setDisponibleText = document.createTextNode("Disponible:" + Disponible);
 	let setTelefonoText = document.createTextNode("Telefono:" + Telefono);
+	let button = document.createElement('button');
+    button.innerHTML = 'Editar boleta';
+
+    button.href =`https://asguerrero.github.io/rifa-mp/manejar_boleta.html?${Nombre}?${Numerouno}?${Numerodos}`;
+
+    button.onclick = function(){
+    	window.open(`https://asguerrero.github.io/rifa-mp/manejar_boleta.html?${Nombre}?${Numerouno}?${Numerodos}`);
+	location.href = `https://asguerrero.github.io/rifa-mp/manejar_boleta.html?${Nombre}?${Numerouno}?${Numerodos}`;
+		console.log('test')
+
+}
+    console.log(button.href)
 	numerouno.appendChild(setNumerounoText); 
 	numerodos.appendChild(setNumerodosText);
 	nombre.appendChild(setNombreText);
@@ -40,6 +52,7 @@ function create_card(Numerouno, Numerodos, Nombre, Disponible, Telefono){
     card.appendChild(nombre);
     card.appendChild(disponible);
     card.appendChild(telefono);
+    card.appendChild(button);
     main_div.appendChild(card);
 
 
